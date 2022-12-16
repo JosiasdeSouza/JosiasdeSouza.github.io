@@ -1,0 +1,28 @@
+/* Add your custom CSS here */
+nav.theme-dark,
+nav.theme-dark ul.links-wrapper.active { background-color: var(--trans-000) }
+nav.theme-dark.menu-sticky.menu-on-scroll,
+nav.theme-dark.menu-sticky.menu-on-scroll ul.links-wrapper.active { background-color: var(--pink-400) }
+nav.theme-dark.menu-sticky.menu-on-scroll,
+nav.theme-dark.menu-sticky.menu-on-scroll ul.links-wrapper.active { background-color: var(--pink-400) }
+
+
+
+header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0,0,0.4), (rgba(0,0,0,0.4)));}
+
+.section-selector-1{background-color: var(--trend-050)}
+.section-selector-1 h3{line-height: 1.5}
+
+
+
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.slide-in-left {
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+            animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+ }
