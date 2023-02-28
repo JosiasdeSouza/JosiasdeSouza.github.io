@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box-display{
+            width: 600px;
+            min-height: 200px;
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #myform{
+            width: 600px;
+            min-height: 200px;
+            background-color: green;
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+         #myform input, #myform p, #myform button{ font-size: 22px; }
+            
+        #myform input{
+            min-width: 400px;}
+            #myform button{
+                padding: 6px 14px;
+                background-color: blue;
+                color: white;
+            }
+            
+
+
+        </style>
+</head>
+
+<body>
+      <div id="box-display"> </div>
+
+     <div id="myform"> 
+       <p><label for="fNameInput">First Name</label>
+       <input type="text" id="fNameInput" value="Please enter your First Name"></p>
+
+       <p><label for="fNameInput">Last Name</label>
+        <input type="text" id="lNameInput" value="Please enter your Last Name"></p>
+
+        <p><label for="fNameInput">Full Name</label>
+            <input type="text" id="fullName" value="" disabled></p> 
+
+            <button id="btn_1" onclick="addNames()">Click me</button>
+
+        </div>
+      
+    <script>
+           function addNames(){
+            let fName = document.getElementById("fNameInput").value;
+            let lName = document.getElementById("lNameInput").value;
+            let fullName = fName + " " + lName;
+            document.getElementById("fullName").value = fullName;
+            }
+
+        let userName="John";
+
+        let price=100;
+
+        console.log("Hello World");
+
+        console.log("User Name "+userName);
+
+        console.log("User Name "+ typeof userName);
+
+        console.log(`Price: ${price}`);
+
+        document.write(`<h1>Price: ${typeof price}</h1>`);
+
+        document.write("<h1>User Name "+userName+ "</h1>");
+            
+        //Get box in web page and assign to variable
+
+        /*let box = document.getElementById("box-display");
+
+        box.textContent = userName;*/
+
+        document.getElementById("box-display").innerHTML = "<h2>" +userName+ "</h2>";
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>
