@@ -1,4 +1,6 @@
 /* Add your custom CSS here */
+
+body {font-family: 'Work Sans', sans-serif; }
 nav.theme-dark,
 nav.theme-dark ul.links-wrapper.active { background-color: var(--trans-000) }
 nav.theme-dark.menu-sticky.menu-on-scroll,
@@ -94,29 +96,30 @@ header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(2) { background-color: var(--purple-300); }
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(3) { background-color: var(--green-600); }
   
+
+  
   .cols-2-half .col-2.col-text, .cols-2-half .col-2.col-visual {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  max-width: 50%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #BDF62F;
-}
-
-.container-menu {
-  justify-content: initial;
-  background-color: #E1F9E3;
-}
-.cols-2-half {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #BDF62F;
-}
-footer.theme-dark {
-  background-color: #B9EF52;
-}
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #BDF62F;
+  }
+  
+  .container-menu {
+    justify-content: initial;
+    background-color: #E1F9E3;
+  }
+  .cols-2-half {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #BDF62F;
+  }
+  footer.theme-dark {
+    background-color: #B9EF52;
+  }
   
