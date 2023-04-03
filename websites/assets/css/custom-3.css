@@ -92,4 +92,14 @@ header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(2) { background-color: var(--purple-300); }
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(3) { background-color: var(--green-600); }
   
+.cols-2-half .col-2.col-text, .cols-2-half .col-2.col-visual {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #BDF62F;
+}
   
