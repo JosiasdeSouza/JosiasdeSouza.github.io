@@ -10,7 +10,9 @@ nav.theme-dark.menu-sticky.menu-on-scroll ul.links-wrapper.active { background-c
 
 header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0,0,0.4), (rgba(0,0,0,0.4)));}
 
-.section-selector-1{background-color: var(--trend-050)}
+.section-selector-1 {
+  background-color: #B8E5A4;
+}
 .section-selector-1 h3{line-height: 1.5}
 
 
@@ -92,7 +94,7 @@ header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(2) { background-color: var(--purple-300); }
   .section-selector-6.theme-light .flex-cols-3 .col-3:nth-child(3) { background-color: var(--green-600); }
   
-.cols-2-half .col-2.col-text, .cols-2-half .col-2.col-visual {
+  .cols-2-half .col-2.col-text, .cols-2-half .col-2.col-visual {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -102,4 +104,19 @@ header.hero-bg > .container.overlay { background-image: linear-gradient(rgba(0,0
   padding-bottom: 5%;
   background-color: #BDF62F;
 }
+
+.container-menu {
+  justify-content: initial;
+  background-color: #E1F9E3;
+}
+.cols-2-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #BDF62F;
+}
+footer.theme-dark {
+  background-color: #B9EF52;
+}
+
   
