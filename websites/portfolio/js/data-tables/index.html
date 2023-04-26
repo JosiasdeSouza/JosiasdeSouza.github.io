@@ -175,6 +175,48 @@
     </main>
 
     <script>
+        
+    function populateTable() {
+        // dados da lista
+        const students = [
+            { id: 24615, firstName: 'Josias', lastName: 'de Souza' },
+            { id: 24303, firstName: 'Vagner', lastName: 'Pires' },
+            { id: 24180, firstName: 'Akinola', lastName: 'Gbenle' },
+            { id: 24867, firstName: 'Bruna', lastName: 'Devegili' },
+            { id: 22157, firstName: 'Daphyne', lastName: 'da Maia' },
+            { id: 24130, firstName: 'Joelma', lastName: 'Rodrigues' },
+            { id: 22423, firstName: 'Miguel', lastName: 'Goncalves' },
+            { id: 22266, firstName: 'Rafael', lastName: 'Tavares' },
+            
+        ];
+
+        const studentTable = document.getElementById('studentData');
+        let rows = '';
+
+        // loop pelos dados da lista e adicionando-os à tabela
+        students.forEach(student => {
+            rows += `
+                <tr>
+                    <td>${student.id}</td>
+                    <td>${student.firstName}</td>
+                    <td>${student.lastName}</td>
+                    <td><button onclick="removeRow(this)">Remove</button></td>
+                </tr>
+            `;
+        });
+
+        // adicionando as linhas preenchidas na tabela
+        studentTable.innerHTML = rows;
+    }
+
+    // função para remover uma linha da tabela
+    function removeRow(button) {
+        const row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+
+
+
     </script>
 
 
