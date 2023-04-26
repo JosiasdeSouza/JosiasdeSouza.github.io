@@ -111,10 +111,27 @@
 
                 <table class="data-table table-lines" id="table-weather-dublin">
                     <tbody>
-
+                        <tr>
+                            <td>Summary</td>
+                            <td><span id="summary"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Temperature</td>
+                            <td><span id="temperature"></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Humidity</td>
+                            <td><span id="humidity"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Pressure</td>
+                            <td><span id="pressure"></span></td>
+                        </tr>
+                        
                     </tbody>
                   </table>
-                  <p>Data from <a href="https://openweathermap.org/city/2964574" target="_blank">Open Weather</a></p>
+                  <p>Data from <a href="https://openweathermap.org/" target="_blank">Open Weather</a></p>
             </div>
 
         </section>
@@ -122,9 +139,15 @@
     </main>
 
     <script>
-
+        populatetableRows();
 
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          populatetableRows();
+        });
+      </script>
+      
 
 
     <!-- footer -->
