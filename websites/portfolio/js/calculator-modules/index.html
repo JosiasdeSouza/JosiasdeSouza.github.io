@@ -7,7 +7,7 @@
     <title>Josias de Souza | Front-end Developer | JavaScript Calculator with Modules</title>
     <meta name="description" content="A basic calculator that uses export/import statements to share code with a JavaScript module file.">
 
-	<!-- Stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/lunadoge.min.css" />
     <link rel="stylesheet" href="../assets/css/javascript-projects.css" />
 
@@ -104,14 +104,12 @@
             padding: 20px;
          }
 
-
     </style>
 
-	<!-- Font Awesome 6.1 icons -->
+    <!-- Font Awesome 6.1 icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
 
 <body>
 
@@ -148,28 +146,29 @@
                 <input type="text" class="calculator-screen" value="" disabled />
 
                 <div class="calculator-keys">
-                  <button type="button" class="operator" value="+">+</button>
-                  <button type="button" class="operator" value="-">-</button>
-                  <button type="button" class="operator" value="*">&times;</button>
-                  <button type="button" class="operator" value="/">&divide;</button>
+                  <button id="btn-plus" type="button" class="operator" value="+">+</button>
+                  <button id="btn-minus" type="button" class="operator" value="-">-</button>
+                  <button id="btn-mult" type="button" class="operator" value="*">&times;</button>
+                  <button id="btn-div" type="button" class="operator" value="/">&divide;</button>
+                   
+                  <button id="btn-7">7</button>
+                  <button id="btn-8">8</button>
+                  <button id="btn-9">9</button>
 
-                  <button type="button" value="7">7</button>
-                  <button type="button" value="8">8</button>
-                  <button type="button" value="9">9</button>
+                  <button id="btn-4">4</button>
+                  <button id="btn-5">5</button>
+                  <button id="btn-6">6</button>
 
-                  <button type="button" value="4">4</button>
-                  <button type="button" value="5">5</button>
-                  <button type="button" value="6">6</button>
+                  
+                  <button id="btn-1">1</button>
+                  <button id="btn-2">2</button>
+                  <button id="btn-3">3</button>
 
-                  <button type="button" value="1">1</button>
-                  <button type="button" value="2">2</button>
-                  <button type="button" value="3">3</button>
+                  <button id="btn-0">0</button>
+                  <button id="btn-dot" type="button" class="decimal" value=".">.</button>
+                  <button id="btn-cl" type="button" class="all-clear" value="all-clear">AC</button>
 
-                  <button type="button" value="0">0</button>
-                  <button type="button" class="decimal" value=".">.</button>
-                  <button type="button" class="all-clear" value="all-clear">AC</button>
-
-                  <button type="button" class="equal-sign operator" value="=">=</button>
+                  <button id="btn-eq" type="button" class="equal-sign operator" value="=">=</button>
                 </div>
               </div>
 
@@ -177,29 +176,217 @@
 
     </main>
 
+   <script>
+
+    const btn1 = document.getElementById('btn-1');
+    btn1.addEventListener('click', function() {
+     });
+      
+   const calculatorScreen = document.querySelector('.calculator-screen');
+   btn1.addEventListener('click', function() {
+   calculatorScreen.value += '1';    
+    });
+ 
+   </script>
+
+   <script>
+   const btn2 = document.getElementById('btn-2');
+   btn2.addEventListener('click', function() {
+    });
+
+    const calculatorScreen2 = document.querySelector('.calculator-screen');
+    btn2.addEventListener('click', function() {
+    calculatorScreen.value += '2';    
+    });
+   </script>
+
     <script>
+    const btn3 = document.getElementById('btn-3');
+    btn3.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen3 = document.querySelector('.calculator-screen');
+     btn3.addEventListener('click', function() {
+     calculatorScreen.value += '3';    
+     });
+    </script>
+
+    <script>
+    const btn4 = document.getElementById('btn-4');
+    btn4.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen4 = document.querySelector('.calculator-screen');
+     btn4.addEventListener('click', function() {
+     calculatorScreen.value += '4';    
+     });
+    </script>
+
+    <script>
+    const btn5 = document.getElementById('btn-5');
+    btn5.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen5 = document.querySelector('.calculator-screen');
+     btn5.addEventListener('click', function() {
+     calculatorScreen.value += '5';    
+     });
+    </script>
+
+    <script>
+    const btn6 = document.getElementById('btn-6');
+    btn6.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen6 = document.querySelector('.calculator-screen');
+     btn6.addEventListener('click', function() {
+     calculatorScreen.value += '6';    
+     });
+    </script>
+
+    <script>
+    const btn7 = document.getElementById('btn-7');
+    btn7.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen7 = document.querySelector('.calculator-screen');
+     btn7.addEventListener('click', function() {
+     calculatorScreen.value += '7';    
+     });
+    </script>
+
+    <script>
+    const btn8 = document.getElementById('btn-8');
+    btn8.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen8 = document.querySelector('.calculator-screen');
+     btn8.addEventListener('click', function() {
+     calculatorScreen.value += '8';    
+     });
+    </script>
+
+    <script>
+    const btn9 = document.getElementById('btn-9');
+    btn9.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen9 = document.querySelector('.calculator-screen');
+     btn9.addEventListener('click', function() {
+     calculatorScreen.value += '9';    
+     });
+    </script>
+
+    <script>
+    const btn0 = document.getElementById('btn-0');
+    btn0.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreen0 = document.querySelector('.calculator-screen');
+     btn0.addEventListener('click', function() {
+     calculatorScreen.value += '0';    
+     });
+     </script>
+
+     <script>
+    const btnplus = document.getElementById('btn-plus');
+        btnplus.addEventListener('click', function() {
+        });
+
+     const calculatorScreenplus = document.querySelector('.calculator-screen');
+        btnplus.addEventListener('click', function() {
+        calculatorScreen.value += '+';    
+        });  
+        
+        </script>
+
+
+    <script>
+    const btndot = document.getElementById('btn-dot');
+    btndot.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreendot = document.querySelector('.calculator-screen');
+     btndot.addEventListener('click', function() {
+     calculatorScreen.value += '.';    
+     }); 
+       </script>
+
+    <script>
+      const btnDiv = document.getElementById('btn-div');
+        btnDiv.addEventListener('click', function() {
+         });
+
+        const calculatorScreenDiv = document.querySelector('.calculator-screen');
+        btnDiv.addEventListener('click', function() {
+        calculatorScreen.value += '/';    
+        });
+
+       </script>
+    <script>
+    const btnmult = document.getElementById('btn-mult');
+    btnmult.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreenmult = document.querySelector('.calculator-screen');
+     btnmult.addEventListener('click', function() {
+     calculatorScreen.value += '*';    
+     }); 
+       </script>
+    <script>
+    const btnsub = document.getElementById('btn-minus');
+    btnsub.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreensub = document.querySelector('.calculator-screen');
+     btnsub.addEventListener('click', function() {
+     calculatorScreen.value += '-';    
+     }); 
+       </script>
+    <script>
+    const btnclear = document.getElementById('btn-cl');
+    btnclear.addEventListener('click', function() {
+     });
+ 
+     const calculatorScreenclear = document.querySelector('.calculator-screen');
+     btnclear.addEventListener('click', function() {
+     calculatorScreen.value = '';    
+     }); 
+    </script>
+
+    <script>
+    const btneq = document.getElementById('btn-eq');
+    const calculatorScreeneq = document.querySelector('.calculator-screen');
+
+   btneq.addEventListener('click', function() {
+   const result = eval(calculatorScreen.value);
+   calculatorScreen.value = result;
+   });
+
     </script>
 
 
+   
+
     <!-- footer -->
-	<footer>
+    <footer>
 
-		<h2>Josias de Souza</h2>
+        <h2>Josias de Souza</h2>
 
-		<h3>Excellence in digital creation</h3>
+        <h3>Excellence in digital creation</h3>
 
-		<ul class="footer-links">
-			<li><a href="../../../index.html">Home</a></li>
-			<li><a href="../../../../portfolio/index.html">Portfolio</a></li>
-			<li><a href="../../../contact/index.html">Contact</a></li>
-		</ul>
+        <ul class="footer-links">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../../contact/index.html">Contact</a></li>
+        </ul>
 
-		<ul class="footer-icons">
-			<li><a href="https://www.linkedin.com/nnnnnnnnnnn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/nnnnnnnnnn" target="_blank"><i class="fab fa-github-square"></i></a></li>
-		</ul>
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/nnnnnnnnnnn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/nnnnnnnnnn" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        </ul>
 
-		<p class="index.html"> <a href="../../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
+        <p class="index.html"> <a href="../../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
 
     </footer>
 
@@ -208,7 +395,7 @@
     <script type="module" src="./app.js"></script>
     <script type="module" src="./perform-calculations.js"></script>
 
-
 </body>
 </html>
+
 
