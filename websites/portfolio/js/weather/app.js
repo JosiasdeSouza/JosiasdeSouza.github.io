@@ -1,6 +1,6 @@
 capitalize = s => s && s[0].toUpperCase() + s.slice(1)
 async function populatetableRows() { 
-    await fetch('https://api.openweathermap.org/data/2.5/weather?q=dublin,ie&units=metric&APPID=3bb7c9e48d3e5db03327d43ae120d283')
+    await fetch('https://api.openweathermap.org/data/2.5/weather?q=dublin,ie&units=metric&APPID=f250726667c330f32286c7c5961899b4')
 
       .then(response => {
         if (response.status !== 200) {
